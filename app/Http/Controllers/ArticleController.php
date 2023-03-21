@@ -15,7 +15,7 @@ class ArticleController extends Controller
         $request->validate([
             // TASK: create your own validation rule called Uppercase
             // It should check whether title's first letter is uppercase
-            'title' => ['required', 'string', new Uppercase],
+            'title' => ['required', 'string', new Uppercase()],
         ]);
         // $validator = Validator::make($request->all(), [
         //     'title' => ['required', new Uppercase()]
